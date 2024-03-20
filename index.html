@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>台中市景點推薦</title>
 
 
 	<style>
@@ -16,22 +16,64 @@
 		.font5 {font-size: 36px;}
 		.container {margin: 0 auto; width: 1300px;}
 
+		.font2:hover {font-size: 50px; background-color: black; color: white;}
+		.font3:hover {font-size: 50px; background-color: black; color: white;}
 		.round_img1 {border-radius: 20px;}
 		.round_img2 {border-radius: 50%; width: 300px; height: 300px;}
 		
+		td {padding: 20px;}
+		img:hover {opacity: 80%;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
 	</style>
 
 
 </head>
 <body>
 
+<div class="navbar">
+  <a href="#t1">台中市</a>
+  <a href="#t2">台中國家歌劇院</a>
+  <a href="#t3">臺中州</a>
+  <a href="#t4">審計新村</a>
+</div>
+
+<div class="main">
+  <p>Some text some text some text some text..</p>
+</div>
+
+
 <div class="container">
-	<table border="1">  
+	<!--0就是不會顯示出來，1就有邊框-->
+	<table border="0">   
 		<tr>
 			<td colspan="2">
 				<font class="font1">台中市景點推薦</font>
 				<br>
-				<img class = round_img1 src="00taichung.jpeg" width="1024px" height="300px">
+				<img  id="t1"class = round_img1 src="00taichung.jpeg" width="1024px" height="300px">
 			</td>
 		</tr>
 		<tr>
@@ -43,7 +85,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td><img class = round_img2 src="01.jpeg"></td>
+			<td><img id="t2" class = round_img2 src="01.jpeg"></td>
 			<td>
 				<font class="font3">台中國家歌劇院</font>
 				<br><br>
@@ -67,10 +109,10 @@
 				<br><br>
 				所在位置：台中市西區民權路99號
 			</td>
-			<td><img class = round_img2 src="02.jpeg"></td>
+			<td><img id="t3" class = round_img2 src="02.jpeg"></td>
 		</tr>
 		<tr>
-			<td><img class = round_img2 src="03.jpeg"></td> 
+			<td><img id="t4" class = round_img2 src="03.jpeg"></td> 
 			<td>
 				<font class="font5">審計新村</font>
 				<br><br>
@@ -85,8 +127,13 @@
 		</tr>
 		<tr>
 			<td colspan="2">
-				410906456
+			<iframe frameborder="0" src="https://www.google.com/maps/d/u/1/embed?mid=1BF6nIc4tsufUX2UyUYDiWzrgMgiOhTE&ehbc=2E312F" width="1000" height="600"></iframe>
 			</td>
+			<tr>
+			<td colspan="2" style="background-color: #333; color: white;">
+				劉彥德製作410906456
+			</td>
+			</tr>
 		</tr>
 	</table>
 </div>
